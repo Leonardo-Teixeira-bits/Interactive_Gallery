@@ -1,18 +1,5 @@
 <!DOCTYPE HTML>
-<!--<html>
-    <head></head>
-    <body>
-        <h1 id='tabula'>WHaaat</h1>
-        <button onclick="Hello()">Clica no pai</button> //vc pode chamar a função dessa forma ou chamá-la em uma tag script diferente
-        <script src="teste.js"> //possibilita a escrita de código JavaScript dentro do HTML
-            //prompt("Olá, mundo!"); //mostra baner e pede entrada de dados do usuário
-            //alert("Olá, mundo!"); //mostra baner com mensagem
-            //document.write("Olá, mundo!"); //escreve na página
-            //document.getElementById("tabula").innerHTML = "Olá";
-        </script>
-        <script>Hello()</script> essa é outra forma de chamar a função 
-    </body>
-    </html>-->
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -26,11 +13,17 @@
 		Hover over an image below to display here.
 	</div>
 	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="1">
 	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()" tabindex ="" onfocus ="upDate(this)" onblur="unDo()">
 	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()" tabindex ="" onfocus ="upDate(this)" onblur="unDo()">
+
+    <img class="preview" alt ="Smoke Soul" src="aleatorias/fantasma.jpg" onmouseover = "upDate(this)" onmouseleave = "unDo()" tabindex ="" onfocus="upDate(this)" onblur="unDo()">
+
+    <img class="preview" alt="Smooth" src="aleatorias/freira.jpg" onmouseover = "upDate(this)" onmouseleave = "unDo()" tabindex ="" onfocus="upDate(this)" onblur="unDo()">
+
+    <img class="preview" alt="uai" src="aleatorias/uai.jpg" onmouseover = "upDate(this)" onmouseleave = "unDo()" tabindex ="" onfocus="upDate(this)" onblur="unDo()">
 
 </body>
 </html>
